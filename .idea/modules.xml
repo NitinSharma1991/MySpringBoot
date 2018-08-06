@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CourseApiDatabase/CourseApiDatabase.iml" filepath="$PROJECT_DIR$/CourseApiDatabase/CourseApiDatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LamdasBasics/LamdasBasics.iml" filepath="$PROJECT_DIR$/LamdasBasics/LamdasBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringBoot.iml" filepath="$PROJECT_DIR$/MySpringBoot.iml" />
+    </modules>
+  </component>
+</project>

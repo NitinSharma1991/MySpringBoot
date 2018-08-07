@@ -2,6 +2,8 @@ package com.lamdas;
 
 import java.util.*;
 import java.util.concurrent.locks.Condition;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class ListLamdaSolution {
 
@@ -12,14 +14,14 @@ public class ListLamdaSolution {
 
           Collections.sort(people,(Person a, Person b)-> a.getFirstName().compareTo(b.getFirstName()));
 
-          printCondtionally(people,p->true);
-          printCondtionally(people, p -> p.getFirstName().startsWith("N"));
+          printConditionally(people,p->true);
+          printConditionally(people, p -> p.getFirstName().startsWith("N"));
     }
 
 
-public static void printCondtionally(List<Person> personList, ListLamda listLamda) {
+public static void printConditionally(List<Person> personList, Predicate<Person> predicate) {
     for (Person person : personList) {
-        if (listLamda.test(person)) {
+        if (predicate.test(person)) {
              System.out.print(person);
     }}
 }

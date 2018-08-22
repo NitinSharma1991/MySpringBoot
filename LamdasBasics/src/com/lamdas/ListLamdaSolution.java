@@ -12,8 +12,8 @@ public class ListLamdaSolution {
                 new Person("Guddan", "Sharma", "28"),
                 new Person("Neeraj", "Sharma", "29"));
 
-          Collections.sort(people,(Person a, Person b)-> a.getFirstName().compareTo(b.getFirstName()));
-
+ //       Collections.sort(people,(Person a, Person b)-> a.getFirstName().compareTo(b.getFirstName()));
+          Collections.sort(people,Comparator.comparing(Person::getFirstName));
           printConditionally(people,p->true);
           printConditionally(people, p -> p.getFirstName().startsWith("N"));
     }
